@@ -22,7 +22,7 @@ export default function Location() {
 
   return (
     <div className="bg-[#032] text-white py-8">
-      <h1 className="font-bold text-2xl text-center tracking-[6px] mb-4">LOKASI</h1>
+      <h1 className="font-bold text-2xl text-center tracking-[6px] mb-8">LOKASI</h1>
       <div className="grid gap-4 sm:gap-8 grid-flow-row sm:grid-flow-col sm:container sm:mx-auto">
         <iframe title="Event Location" className="w-72 h-80 mx-auto sm:w-full sm:mx-0 sm:justify-self-end"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7423.675573262011!2d108.86965255352442!3d-6.884377101048446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fa62606561ae5%3A0xb6e68810abeeda0d!2sPondok%20Pesantren%20Al%20Bukhori!5e0!3m2!1sen!2sid!4v1705622975334!5m2!1sen!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" />
         <div className="mx-8 sm:mx-0">
