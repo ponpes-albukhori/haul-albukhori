@@ -18,14 +18,16 @@ export default function Home() {
             <h2 className="text-2xl tracking-[12px]">KE-XV</h2>
           </div>
         </div>
-        <div className="w-40 h-80 sm:w-20 sm:h-40 mx-auto"></div>
-        <div className="text-white text-center mb-8">
-          <h2 className="font-['Freehand'] text-2xl">Almaghfurlah</h2>
-          <h1 className="font-bold text-2xl">KH. Abdul Karim Zawawi</h1>
-        </div>
-        <CountdownTimer />
-        <div className="text-center mt-6">
-          <FontAwesomeIcon icon={faAngleDown} className="text-white text-4xl animate-bounce" />
+        {/* <div className="w-screen h sm:w-20 sm:h-40 mx-auto"></div> */}
+        <div className="absolute w-screen bottom-16">
+          <div className="text-white text-center mb-8">
+            <h2 className="font-['Freehand'] text-2xl">Almaghfurlah</h2>
+            <h1 className="font-bold text-2xl">KH. Abdul Karim Zawawi</h1>
+          </div>
+          <CountdownTimer />
+          <div className="text-center mt-6">
+            <FontAwesomeIcon icon={faAngleDown} className="text-white text-4xl animate-bounce" />
+          </div>
         </div>
       </div>
     </div>
