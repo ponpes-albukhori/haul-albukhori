@@ -11,7 +11,7 @@ export default function CountdownTimer() {
   useEffect(() => {
     const interval = setInterval(() => {
       const now = new Date().getTime();
-      const eventDate = new Date('2024-01-27T19:00:00').getTime(); // Ganti dengan tanggal event Anda
+      const eventDate = new Date('2024-01-27T19:30:00').getTime(); // Ganti dengan tanggal event Anda
 
       const timeDifference = eventDate - now;
 
