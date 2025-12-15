@@ -1,6 +1,7 @@
 {
   "name": "haul-albukhori",
   "version": "0.1.0",
+  "homepage": "https://ponpes-albukhori.github.io/haul-albukhori",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
