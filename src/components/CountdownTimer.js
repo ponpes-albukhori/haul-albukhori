@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 export default function CountdownTimer() {
   const [countdown, setCountdown] = useState({
@@ -11,13 +11,17 @@ export default function CountdownTimer() {
   useEffect(() => {
     const interval = setInterval(() => {
       const now = new Date().getTime();
-      const eventDate = new Date('2024-01-27T19:30:00').getTime(); // Ganti dengan tanggal event Anda
+      const eventDate = new Date("2026-01-05T19:30:00").getTime(); // Ganti dengan tanggal event Anda
 
       const timeDifference = eventDate - now;
 
       const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+      const hours = Math.floor(
+        (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor(
+        (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
+      );
       const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
       setCountdown({ days, hours, minutes, seconds });
@@ -33,7 +37,9 @@ export default function CountdownTimer() {
   }, []); // [] sebagai dependencies agar useEffect hanya dijalankan sekali saat komponen dipasang
 
   return (
-    <div id="countdownTimer" className="bg-gray-200 flex flex-row justify-around py-4 px-8 md:px-64">
+    <div
+      id="countdownTimer"
+      className="bg-gray-200 flex flex-row justify-around py-4 px-8 md:px-64">
       <div id="days" className="text-center w-14">
         <p className="font-bold text-5xl">{countdown.days}</p>
         <p>hari</p>

@@ -1,5 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareFacebook, faSquareInstagram, faSquareYoutube } from "@fortawesome/free-brands-svg-icons";
+import {
+  faSquareFacebook,
+  faSquareInstagram,
+  faSquareYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function App() {
   return (
@@ -11,21 +15,40 @@ export default function App() {
           alt="haul"
         />
         <div>
-          <h1 className="font-bold text-center sm:text-left mb-2">Media Sosial</h1>
+          <h1 className="font-bold text-center sm:text-left mb-2">
+            Media Sosial
+          </h1>
           <div className="flex flex-row gap-4 justify-center text-xl">
-            <a href="https://www.facebook.com/PesantrenAlBukhori" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.facebook.com/PesantrenAlBukhori"
+              target="_blank"
+              rel="noreferrer">
               <FontAwesomeIcon icon={faSquareFacebook} />
             </a>
-            <a href="https://instagram.com/pesantrenalbukhori" target="_blank" rel="noreferrer">
+            <a
+              href="https://instagram.com/pesantrenalbukhori"
+              target="_blank"
+              rel="noreferrer">
               <FontAwesomeIcon icon={faSquareInstagram} />
             </a>
-            <a href="https://www.youtube.com/@PesantrenAlBukhori" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.youtube.com/@PesantrenAlBukhori"
+              target="_blank"
+              rel="noreferrer">
               <FontAwesomeIcon icon={faSquareYoutube} />
             </a>
           </div>
         </div>
       </div>
-      <p className="text-center text-xs">© 2024 Ponpes Al Bukhori. <br className="sm:hidden" />Hak cipta dilindungi undang-undang. <br />Created by <a href="https://ahmadmcer.github.io/" className="underline">@ahmadmcer</a>.</p>
+      <p className="text-center text-xs">
+        © 2025 Ponpes Al Bukhori. <br className="sm:hidden" />
+        Hak cipta dilindungi undang-undang. <br />
+        Created by{" "}
+        <a href="https://ahmadmcer.github.io/" className="underline">
+          @ahmadmcer
+        </a>
+        .
+      </p>
     </div>
   );
 }
