@@ -1,47 +1,30 @@
 {
   "name": "haul-albukhori",
-  "version": "0.1.0",
-  "homepage": "https://ponpes-albukhori.github.io/haul-albukhori",
-  "private": true,
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.5.1",
-    "@fortawesome/free-brands-svg-icons": "^6.5.1",
-    "@fortawesome/free-regular-svg-icons": "^6.5.1",
-    "@fortawesome/free-solid-svg-icons": "^6.5.1",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
+  "version": "1.0.0",
+  "description": "Information for Haul K.H. Abdul Karim Zawawi",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "tw:build": "npx @tailwindcss/cli -i ./web/style.css -o ./web/tailwind.css",
+    "tw:watch": "npx @tailwindcss/cli -i ./web/style.css -o ./web/tailwind.css --watch",
+    "start": "http-server ./web"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ponpes-albukhori/haul-albukhori.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "AhmadMCer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ponpes-albukhori/haul-albukhori/issues"
+  },
+  "homepage": "https://github.com/ponpes-albukhori/haul-albukhori#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "http-server": "^14.1.1",
+    "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.1"
+    "prettier": "^3.7.4",
+    "prettier-plugin-tailwindcss": "^0.7.2"
   }
 }
