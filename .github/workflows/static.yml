@@ -39,7 +39,7 @@ jobs:
         with:
           # Upload seluruh direktori repository (.) karena index.html ada di root
           # Jika index.html Anda ada di dalam folder 'public', ubah jadi './public'
-          path: "."
+          path: "./web"
 
       - name: Deploy to GitHub Pages
         id: deployment
